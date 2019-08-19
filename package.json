@@ -1,0 +1,21 @@
+{
+  "name": "leapbase-cli",
+  "version": "1.0.0",
+  "description": "leapbase CLI",
+  "license": "MIT",
+  "author": "leapon",
+  "main": "bin/leapbase",
+  "repository": {
+    "type": "git",
+    "url": "git://gitlab.com/leapbase/leapbase-cli.git"
+  },
+  "dependencies": {
+    "async": "~2.6.0",
+    "debug": "^3.1.0",
+    "esm": "^3.2.25"
+  },
+  "bin": {
+    "leapbase": "bin/leapbase"
+  },
+  "scripts": {}
+}
