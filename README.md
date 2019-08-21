@@ -3,10 +3,12 @@
 CLI for leapbase
 
 
-# Install in local
+# Install and use in local
 
 ```
 npm install -g .
+
+leapbase
 ```
 
 
