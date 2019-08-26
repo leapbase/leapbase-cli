@@ -1,4 +1,13 @@
 #!/usr/bin/env node
 
-require = require('esm')(module /*, options*/);
-require('./leapbase_cli').cli(process.argv);
+const args = require('args');
+ 
+args
+  .command('create', 'Create project', ['c']);
+
+args
+ .command('install', 'Install extension', ['i']);
+ 
+const flags = args.parse(process.argv)
+
+

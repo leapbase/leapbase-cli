@@ -1,0 +1,15 @@
+#!/usr/bin/env node
+
+const args = require('args');
+const arguments = process.argv;
+
+const projectName = arguments[2] || '';
+
+if (!projectName) {
+  console.log('leapbase create <project name>');
+  console.log('missing project name');
+  return;
+}
+
+console.log('in leapbase-create - project:', projectName);
+
