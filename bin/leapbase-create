@@ -2,7 +2,7 @@
 
 const args = require('args');
 const support = require('support');
-const log = require ('why-is-node-running');
+// const log = require ('why-is-node-running');
 
 const arguments = process.argv;
 const projectName = arguments[2] || '';
@@ -16,7 +16,7 @@ if (!projectName) {
 const main = async function() {
   let result = await support.createProject(projectName);
   console.log('createProject result:', result);
-  log();
+  // log();
 }
 
-setTimeout(main, 1500);
+main();
