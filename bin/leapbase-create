@@ -12,5 +12,9 @@ if (!projectName) {
   return;
 }
 
-// console.log('in leapbase-create - project:', projectName);
-support.createProject(projectName);
+main = async function() {
+  let result = await support.createProject(projectName);
+  console.log('result:', result);
+}
+
+main();
