@@ -1,8 +1,9 @@
 #!/usr/bin/env node
 
 const args = require('args');
-const arguments = process.argv;
+const support = require('support');
 
+const arguments = process.argv;
 const projectName = arguments[2] || '';
 
 if (!projectName) {
@@ -11,5 +12,5 @@ if (!projectName) {
   return;
 }
 
-console.log('in leapbase-create - project:', projectName);
-
+// console.log('in leapbase-create - project:', projectName);
+support.createProject(projectName);

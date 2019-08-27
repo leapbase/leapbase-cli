@@ -13,7 +13,7 @@ pids
 # Dependency directories
 node_modules/
 jspm_packages/
-!site/node_modules/
+!bin/node_modules/
 
 # Optional npm cache directory
 .npm
