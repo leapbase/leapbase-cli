@@ -6,9 +6,10 @@ const arguments = process.argv;
 const extension = arguments[2] || '';
 
 if (!extension) {
-  console.log('leapbase install <extension name>');
+  console.log('leapbase add <extension name>');
   console.log('missing extension name');
   return;
 }
 
-console.log('in leapbase-install - extension:', extension);
+console.log('in leapbase-add - extension:', extension);
+
