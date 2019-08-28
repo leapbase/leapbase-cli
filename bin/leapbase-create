@@ -4,6 +4,7 @@ const args = require('args');
 const support = require('support');
 const arguments = process.argv;
 const projectName = arguments[2] || '';
+const downloadUrl = arguments[3] || '';
 
 if (!projectName) {
   console.log('leapbase create <project name>');
@@ -12,7 +13,7 @@ if (!projectName) {
 }
 
 (async function() {
-  let result = await support.createProject(projectName);
+  let result = await support.createProject(projectName, downloadUrl);
   if (result) {
     console.log(`${projectName} is created.`);
   } else {
