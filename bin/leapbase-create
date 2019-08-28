@@ -2,8 +2,6 @@
 
 const args = require('args');
 const support = require('support');
-// const log = require ('why-is-node-running');
-
 const arguments = process.argv;
 const projectName = arguments[2] || '';
 
@@ -13,10 +11,12 @@ if (!projectName) {
   return;
 }
 
-const main = async function() {
+(async function() {
   let result = await support.createProject(projectName);
-  console.log('createProject result:', result);
-  // log();
-}
+  if (result) {
+    console.log(`${projectName} is created.`);
+  } else {
+    console.log(`failed to create ${projectName}`)
+  }
+})();
 
-main();
