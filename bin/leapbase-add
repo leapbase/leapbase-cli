@@ -1,15 +1,22 @@
 #!/usr/bin/env node
 
 const args = require('args');
+const support = require('support');
 const arguments = process.argv;
+const extensionName = arguments[2] || '';
+const downloadUrl = arguments[3] || '';
 
-const extension = arguments[2] || '';
-
-if (!extension) {
+if (!extensionName) {
   console.log('leapbase add <extension name>');
   console.log('missing extension name');
   return;
 }
 
-console.log('in leapbase-add - extension:', extension);
-
+(async function() {
+  let result = await support.addExtension(extensionName, downloadUrl);
+  if (result) {
+    console.log(`${extensionName} is added.`);
+  } else {
+    console.log(`failed to add extension ${extensionName}`)
+  }
+})();
