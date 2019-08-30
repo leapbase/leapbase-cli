@@ -15,9 +15,9 @@ if (!projectName) {
 (async function() {
   let result = await support.createProject(projectName, downloadUrl);
   if (result) {
-    console.log(`${projectName} is created.`);
+    console.log(`project ${projectName} is created.`);
   } else {
-    console.log(`failed to create ${projectName}`)
+    console.log(`failed to create project ${projectName}`);
   }
 })();
 
