@@ -3,11 +3,11 @@
 const args = require('args');
 
 args
-  .command('create', 'Create project', ['c']);
+  .command('create', 'Create project', []);
 args
- .command('add', 'Add extension to project', ['a']);
+ .command('add', 'Add extension to project', []);
 const flags = args.parse(process.argv)
 
-if (JSON.stringify(flags) === '{}') {
-  args.showHelp();
-}
+// if (JSON.stringify(flags) === '{}') {
+//   args.showHelp();
+// }
