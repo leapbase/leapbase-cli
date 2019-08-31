@@ -7,7 +7,3 @@ args
 args
  .command('add', 'Add extension to project', []);
 const flags = args.parse(process.argv)
-
-// if (JSON.stringify(flags) === '{}') {
-//   args.showHelp();
-// }
