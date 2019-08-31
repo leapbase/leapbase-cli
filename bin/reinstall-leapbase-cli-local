@@ -1,0 +1,5 @@
+# uninstall globally first, then install locally, to avoid 'node_modules/ansi-styles' not found error
+
+npm uninstall --global leapbase-cli
+
+npm install -g .
