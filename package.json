@@ -7,7 +7,7 @@
   "main": "bin/leapbase",
   "repository": {
     "type": "git",
-    "url": "git://gitlab.com/leapbase/leapbase-cli.git"
+    "url": "git://github.com/leapbase/leapbase-cli.git"
   },
   "dependencies": {
     "args": "^5.0.1",
