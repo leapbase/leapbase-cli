@@ -15,7 +15,11 @@ if (!projectName) {
 (async function() {
   let result = await support.createProject(projectName, downloadUrl);
   if (result) {
-    console.log(`project ${projectName} is created.`);
+    console.log(`Project ${projectName} is created.`);
+    console.log('To start your web application, run the following commands:\n');
+    console.log(`cd ${projectName}`);
+    console.log(`npm install`);
+    console.log(`npm start\n`);
   } else {
     console.log(`failed to create project ${projectName}`);
   }
