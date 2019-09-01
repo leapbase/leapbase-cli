@@ -1,0 +1,21 @@
+#!/usr/bin/env node
+
+const args = require('args');
+const support = require('support');
+const arguments = process.argv;
+const extensionName = arguments[2] || '';
+
+if (!extensionName) {
+  console.log('leapbase remove <extension name>');
+  console.log('missing extension name');
+  return;
+}
+
+(async function() {
+  let result = await support.removeExtension(extensionName);
+  if (result) {
+    console.log(`${extensionName} is removed.`);
+  } else {
+    console.log(`Error in removing extension ${extensionName}`)
+  }
+})();

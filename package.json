@@ -1,6 +1,6 @@
 {
   "name": "leapbase-cli",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "leapbase CLI",
   "license": "MIT",
   "author": "leapon",
@@ -24,7 +24,8 @@
   "bin": {
     "leapbase": "bin/leapbase",
     "leapbase-create": "bin/leapbase-create",
-    "leapbase-add": "bin/leapbase-add"
+    "leapbase-add": "bin/leapbase-add",
+    "leapbase-remove": "bin/leapbase-remove"
   },
   "scripts": {}
 }

@@ -6,4 +6,7 @@ args
   .command('create', 'Create project', []);
 args
  .command('add', 'Add extension to project', []);
+args
+.command('remove', 'Remove extension from project', []);
+
 const flags = args.parse(process.argv)
