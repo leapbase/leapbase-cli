@@ -1,0 +1,15 @@
+#!/usr/bin/env node
+
+const args = require('args');
+const support = require('support');
+const arguments = process.argv;
+const listUrl = arguments[2] || '';
+
+(async function() {
+  let result = await support.listExtension(listUrl);
+  if (result) {
+    console.log(`${result}`);
+  } else {
+    console.log(`Error in getting extension list`);
+  }
+})();

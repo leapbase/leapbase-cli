@@ -17,6 +17,6 @@ if (!extensionName) {
   if (result) {
     console.log(`${extensionName} is added.`);
   } else {
-    console.log(`failed to add extension ${extensionName}`)
+    console.log(`failed to add extension ${extensionName}`);
   }
 })();

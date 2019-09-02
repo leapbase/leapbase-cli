@@ -3,10 +3,12 @@
 const args = require('args');
 
 args
-  .command('create', 'Create project', []);
+  .command('create-project', 'Create project', ['create']);
 args
- .command('add', 'Add extension to project', []);
+ .command('add-extension', 'Add extension to project', ['add']);
 args
-.command('remove', 'Remove extension from project', []);
+.command('remove-extension', 'Remove extension from project', ['remove']);
+args
+.command('list-extension', 'List extensions for leapbase', ['list']);
 
 const flags = args.parse(process.argv)
