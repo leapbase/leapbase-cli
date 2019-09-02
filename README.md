@@ -8,14 +8,27 @@ CLI for leapbase
 npm install -g leapbase-cli
 ```
 
-# Create project
+# Create web project
 
 ```
-leapbase create <project name>
+leapbase create-project <project name>
 ```
 
-# Add extension to project
+# List extensions 
 
 ```
-leapbase add <extension name>
+leapbase list-extension
 ```
+
+# Add extension to web project
+
+```
+leapbase add-extension <extension name>
+```
+
+# Remove extension from web project
+
+```
+leapbase remove-extension <extension name>
+```
+
