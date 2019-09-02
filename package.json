@@ -23,9 +23,10 @@
   },
   "bin": {
     "leapbase": "bin/leapbase",
-    "leapbase-create": "bin/leapbase-create",
-    "leapbase-add": "bin/leapbase-add",
-    "leapbase-remove": "bin/leapbase-remove"
+    "leapbase-create-project": "bin/leapbase-create-project",
+    "leapbase-add-extension": "bin/leapbase-add-extension",
+    "leapbase-list-extension": "bin/leapbase-list-extension",
+    "leapbase-remove-extension": "bin/leapbase-remove-extension"
   },
   "scripts": {}
 }
